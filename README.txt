@@ -1,4 +1,4 @@
-get_tweets:
+get_tweets.py:
 
 This will get the tweets for a particular movie. You will have to specify the movie name as command line argument
 Also to control the number of tweets, you can change the loop counter break condition value.
@@ -10,15 +10,15 @@ Preferably this code is run only once and then saving it using a dump. This dict
 
 preprocess.py:
 
-The code runs only in windows
 This file does the pre-processing on the raw twitter data file - file_name variable.
 After running this, it spits out processed.txt file which is then further used to doing the sentiment analysis.
 
 
-Project_mainfile : It is the main file where the entire algorithm runs as described in the paper . Currently this is an offline where we manually enter the movie name 
-					  This code also generates positive or negative rating of each category of movie (like acting etc) and also it generates top tweets within each category.
-					  This file takes lot of time for execution.
-					  Note : we need to manually set the movie names and paths of various file names within the code. (all filenames follow this path C:\IRProject)
+Project_mainfile : The code runs only in windows (as we are using batch files)
+It is the main file where the entire algorithm runs as described in the paper . Currently this is an offline process 
+where we manually enter the movie name. This code also generates positive or negative rating of each category of movie 
+(like acting etc) and also it generates top tweets within each category. This file takes lot of time for execution.
+Note : we need to manually set the movie names and paths of various file names within the code. (all filenames follow this path C:\IRProject)
 					  
 GetFeatures.py : This file categorizes different nouns into the main five categories as mentioned in the report
 
